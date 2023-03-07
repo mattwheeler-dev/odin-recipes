@@ -28,6 +28,7 @@ img {
 	width: 50%;
 	margin: 0 25%;
 	border-radius: 15px;
+	box-shadow: 0 0 0.75rem #000;
 }
 
 ul {
@@ -45,4 +46,29 @@ a {
 
 a:hover {
 	color: #6dceff;
+}
+
+/* RECIPE PAGES ONLY */
+h2 {
+	margin: 1rem 0 0 7.5rem;
+}
+
+p {
+	width: 60%;
+	margin: 0 20%;
+}
+
+.ingredients,
+.steps {
+	margin: 0 20%;
+	flex-direction: column;
+}
+
+.ingredients li,
+.steps li {
+	margin-top: 0.25rem;
+}
+
+.copy {
+	margin: 5rem auto 2rem auto;
 }
