@@ -1,22 +1,21 @@
-/* GOOGLE FONT IMPORT [POPPINS] */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
 
-/* DEFAULTS */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 body {
 	height: auto;
-	width: 100vw;
+	width: 100dvw;
 	color: #fff;
 	background-color: #202020;
 	overflow-x: hidden;
 }
 
+/* Home page */
 h1 {
 	text-align: center;
 	margin: 2rem;
@@ -26,49 +25,54 @@ h1 {
 img {
 	height: auto;
 	width: 50%;
-	margin: 0 25%;
+	max-width: 500px;
+	margin: 2rem auto;
+	display: block;
+	border: 2px solid #ffffff55;
 	border-radius: 15px;
 	box-shadow: 0 0 0.75rem #000;
 }
 
 ul {
-	width: 50%;
-	margin: 2rem 25%;
-	font-weight: 300;
+	width: fit-content;
+	margin: 0 auto;
 	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
+}
+
+li {
+	margin: 1rem 0;
 }
 
 a {
 	color: #fff;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #6dceff;
+	color: #ffa305;
 }
 
-/* RECIPE PAGES ONLY */
+/* Recipe pages */
+nav {
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
 h2 {
-	margin: 1rem 0 0 7.5rem;
+	text-align: center;
+	margin: 2rem 0 0.5rem 0;
 }
 
-p {
+p,
+ol {
 	width: 60%;
-	margin: 0 20%;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
-.ingredients,
-.steps {
-	margin: 0 20%;
-	flex-direction: column;
-}
-
-.ingredients li,
-.steps li {
-	margin-top: 0.25rem;
-}
-
-.copy {
-	margin: 5rem auto 2rem auto;
+footer {
+	text-align: center;
+	margin: 3rem 0 1rem 0;
 }
